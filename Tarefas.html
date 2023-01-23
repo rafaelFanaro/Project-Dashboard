@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="shortcut icon" href="imagens/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/Tarefas.css">
+    <script type="text/javascript" src="js/Tarefas.js" defer></script>
+</head>
+<body>
+
+    <header>Planejamento</header>
+    
+        <div id="index">
+            <div id="title" onclick="projetoInputShow()">
+                <div id="pTitle" class="title">Projetos</div>
+                <img id="titleBtn" class="icon" src="imagens/plus-thick.svg">
+                <input id="inputProjeto" type="text" class="hiden" name="inputProjeto" placeholder="Novo Projeto" autocomplete="off">
+            </div>
+            
+            <div id="projeto"></div>
+        </div>
+        
+        <div id="checklist">
+            <div id="titleTask">
+                <div id ="titulo"></div>
+                <img id="cross2" onclick="tarefaShow()" class="hiden" src="imagens/plus-thick.svg">
+                <input id="inputTask" class="hiden" name="inputTask" type="text" placeholder="Nova Tarefa" autocomplete="off">
+            </div>
+            <div id="task"></div>
+            <div id="check"></div>
+        </div>
+    </div>
+</body>
+</html>
